@@ -1,0 +1,149 @@
+.navbar__title {
+    font-size: 1.1rem
+}
+
+.single__title {
+    font-size: 1.9rem
+}
+
+.single__contents h2 {
+    font-size: 1.6rem
+}
+
+.featured-image {
+    width: 50%;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, .5) !important;
+    margin-bottom: 15px !important
+}
+
+.featured-image::after {
+    background-color: transparent
+}
+
+@media only screen and (max-width:600px) {
+    .featured-image {
+        width: 100%;
+        height: 100%
+    }
+}
+
+.single__contents h1 {
+    font-size: 1.6rem;
+    margin: 1.5rem 0 1rem
+}
+
+.single__contents h2 {
+    margin: 1rem 0
+}
+
+.single__contents p {
+    margin: 0 0 1rem
+}
+
+.navbar__title {
+    line-height: 1;
+    color: darkslategrey;
+    text-decoration: none
+}
+
+.navbar__title:before,
+.navbar__title:after {
+    content: '> IanLevy';
+    position: absolute;
+    opacity: .8
+}
+
+.navbar__title:after {
+    color: #f0f;
+    z-index: -2;
+    animation: glitch-small .7s cubic-bezier(0.25, 0.46, 0.45, 0.94)both infinite
+}
+
+.navbar__title:before {
+    color: #0ff;
+    z-index: -1;
+    animation: glitch-small .7s cubic-bezier(0.25, 0.46, 0.45, 0.94)reverse both infinite
+}
+
+@keyframes glitch-small {
+    0% {
+        transform: translate(0)
+    }
+
+    33% {
+        transform: translate(2px, 1px)
+    }
+
+    66% {
+        transform: translate(-1px, -1px)
+    }
+
+    to {
+        transform: translate(0)
+    }
+}
+
+.modal__header {
+    top: 15px !important
+}
+
+#TableOfContents a:hover {
+    background-color: rgba(255, 97, 136, .1) !important;
+    color: #ff6188 !important
+}
+
+.theme__dark a:hover,
+.theme__dark a:active,
+.theme__dark a:focus {
+    text-decoration: none !important
+}
+
+th,
+tr,
+td {
+    border: 1px solid rgba(255, 255, 255, 0.8) !important
+}
+
+.theme__dark .single__tag {
+    background-color: #343434
+}
+
+.single__tag {
+    padding: .1rem .5rem;
+    border-radius: 5%;
+    margin: .2rem;
+    text-transform: capitalize
+}
+
+.theme__dark .expand__button {
+    background-color: #1b1b1b !important
+}
+
+.theme__dark .expand__button:hover,
+.theme__dark .expand__button:active,
+.theme__dark .expand__button:focus {
+    background-color: #282828 !important
+}
+
+.featured-image {
+    pointer-events: none
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #eee #3c3c3c
+}
+
+*::-webkit-scrollbar {
+    width: 4px
+}
+
+*::-webkit-scrollbar-track {
+    background: #3c3c3c
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #eee;
+    border-radius: 100px;
+    border: 3px solid #eee
+}

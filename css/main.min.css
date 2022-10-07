@@ -1146,7 +1146,10 @@ pre {
 
 .theme__dark #container {
     color: #fcfcfa;
-    background-color: #1b1b1b
+    background-image: url(https://cdn.discordapp.com/attachments/486049699556491264/1027916649732509757/wallpaperflare.com_wallpaper.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .theme__dark #container hr {

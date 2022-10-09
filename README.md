@@ -1,4 +1,4 @@
 # THM
 writeups documentation
 
-URL: x
+URL: https://i414224.hera.fhict.nl/writeups/
